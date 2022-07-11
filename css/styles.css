@@ -1,14 +1,37 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #000000;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+
 html{
     font-size: 62.5%; /* 1rem = 10px */
 }
 body{
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 
 .titulo{
     text-align: center;
     font-size: 3.8rem;
+    color: var(--primarrio)
 }
 .titulo span{
     font-size: 2rem;
+}
+
+/* NAVEGACIÓN */
+.nav-bg{
+    background-color: var(--secundario);
+}
+.nav-principal{
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
 }
