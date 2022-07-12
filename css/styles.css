@@ -14,7 +14,13 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
+/* UTILIDADES */
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
 
+/* HEADER */
 .titulo{
     text-align: center;
     font-size: 3.8rem;
@@ -29,9 +35,16 @@ body{
     background-color: var(--secundario);
 }
 .nav-principal{
+    display: flex;
+    justify-content: space-between;
 }
-
-.contenedor{
-    width: 120rem;
-    margin: 0 auto;
+.nav-principal a{
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
