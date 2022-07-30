@@ -38,6 +38,7 @@ body{
 }
 .alinear-derecha{
     justify-content: flex-end;
+    margin-top: 4rem;
 }
 .boton{
     background-color: var(--secundario);
@@ -199,8 +200,18 @@ h1, h2, h3{
     margin-bottom: 2rem;
     color: var(--primario);
 }
-.campos{
 
+@media (min-width: 768px){
+    .contenedor-campo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/3;
+    }
 }
 .campo{
     margin-bottom: 1rem;
@@ -218,10 +229,16 @@ h1, h2, h3{
     width: 100%;
 }
 
-.enviar .boton{
+/* .enviar .boton{
     width: 100%;
-}
+} */
 
 .campo textarea{
     height: 20rem;
+}
+
+
+/* footer */
+.footer{
+    text-align: center;
 }
