@@ -10,7 +10,7 @@
 html{
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 *, *::before, *::after{
     box-sizing: inherit;
@@ -20,12 +20,12 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
-.servicio,
+/* .servicio,
 .nav-principal,
 .formulario{
     scroll-snap-align: center;
     scroll-snap-stop: always;
-}
+} */
 
 /* UTILIDADES */
 .sombra{
@@ -131,6 +131,7 @@ h1, h2, h3{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin-bottom: 2rem;
     height: 410px;
     position: relative;
